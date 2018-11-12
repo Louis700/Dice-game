@@ -21,10 +21,11 @@ window.onload = function () {
 				else
 					dice.element.classList.add("selected");
 
-			} else if(!dice.element.classList.contains("disabled"))
+			} else if(!dice.element.classList.contains("disabled") && !dice.element.classList.contains("validated")) {
 				dice.roll(new Time(2, DurationType.SECOND));
+				setTimeout(() => dice.validate(true), 2000);
+			}
 		});
-
 		document.getElementById("dicesContainer").appendChild(dice.element);
 
 		return dice;

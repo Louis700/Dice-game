@@ -39,4 +39,12 @@ class Dice {
 		this.element.innerHTML = "";
 		this.element.appendChild(this.skin[faceNumber - 1].cloneNode());
 	}
+
+	validate(isValidated) {
+		if(isValidated)
+			this.element.classList.add("validated");
+		else
+			this.element.classList.remove("validated");
+	}
+
 }

@@ -31,6 +31,11 @@ div.dice.disabled {
 	cursor: default;
 }
 
+div.dice.validated {
+	background-color: rgb(200, 255, 200);
+	cursor: default;
+}
+
 div.dice.selected {
 	background-color: lightblue;
 }
