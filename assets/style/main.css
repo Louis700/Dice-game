@@ -1,7 +1,60 @@
+body {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+}
+
+canvas {
+	border: 3px solid rgb(52, 52, 52);
+	border-radius: 3px;
+
+	cursor: pointer;
+}
+
 div.dice {
 	width: 200px;
 	height: 200px;
+	margin-left: 50px;
 
 	border: 3px solid black;
 	border-radius: 3px;
+
+	cursor: pointer;
+
+	transition: background-color 0.2s;
+}
+
+div.dice.disabled {
+	background-color: lightGrey;
+	cursor: default;
+}
+
+div.dice.selected {
+	background-color: lightblue;
+}
+
+#textBox {
+	width: 70%;
+	height: 250px;
+
+	margin-top: 20px;
+
+	border-radius: 3px;
+	border: 3px solid rgb(52, 52, 52);
+
+	color: rgb(52, 52, 52);
+
+	font-size: 30px;
+	font-family: monospace;
+	text-align: left;
+}	
+
+#dicesContainer {
+	width: 100vw;
+	margin-top: 50px;
+	display: flex;
+	
+	justify-content: center; 
 }

@@ -5,14 +5,39 @@
 	<title>Dice game</title>
 	<link rel="stylesheet" href="assets/style/main.css">
 	
+	
+	<script src="assets/js/math/random.js"></script>
+	<script src="assets/js/math/Vector.js"></script>
+
+	<script src="assets/js/draw/ColorType.js"></script>
+	<script src="assets/js/draw/Color.js"></script>
+	<script src="assets/js/draw/style.js"></script>
+	<script src="assets/js/draw/shapes.js"></script>
+
+	<script src="assets/js/engine/fps.js"></script>
+	<script src="assets/js/engine/SpriteSheet.js"></script>
+	<script src="assets/js/engine/Animation.js"></script>
+
+	<script src="assets/js/sequences/intro.js"></script>
+	<script src="assets/js/sequences/trySequence.js"></script>
+
 	<script src="assets/js/error.js"></script>
-	<script src="assets/js/random.js"></script>
 	<script src="assets/js/Enum.js"></script>
 	<script src="assets/js/DurationType.js"></script>
 	<script src="assets/js/Time.js"></script>
 	<script src="assets/js/Dice.js"></script>
 	<script src="assets/js/initialize.js"></script>
+	<script src="assets/js/sketch.js"></script>
+
 </head>
 <body>
+	<canvas height="700px" width="1133px">Si ce message s'affiche, votre navigateur est sans doute incompatible avec ce site.</canvas>
+	<div id="textBox"></div>
+	<div id="dicesContainer"></div>
+
+	<audio id="musicAudio" loop>
+		<source src="assets/audio/mozart_sonata_no_11.mp3" type="audio/mpeg">
+		Si ce message s'affiche, il est possible que votre navigateur ne soit pas compatible !
+	</audio>
 </body>
 </html>
